@@ -36,8 +36,8 @@
     --dark: #343a40;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
+    --breakpoint-md: 1200px;
+    --breakpoint-lg: 1200px;
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
@@ -599,13 +599,13 @@ pre code {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .container {
         max-width: 720px
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .container {
         max-width: 960px
     }
@@ -1139,7 +1139,7 @@ pre code {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .col-md {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -1351,7 +1351,7 @@ pre code {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .col-lg {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -3430,7 +3430,7 @@ input[type=submit].btn-block {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .dropdown-menu-md-left {
         right: auto;
         left: 0
@@ -3442,7 +3442,7 @@ input[type=submit].btn-block {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .dropdown-menu-lg-left {
         right: auto;
         left: 0
@@ -4635,7 +4635,7 @@ input[type=submit].btn-block {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .navbar-expand-md {
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
@@ -4684,7 +4684,7 @@ input[type=submit].btn-block {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .navbar-expand-lg {
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
@@ -5814,7 +5814,7 @@ a.badge-dark:focus {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .list-group-horizontal-md {
         -ms-flex-direction: row;
         flex-direction: row
@@ -5839,7 +5839,7 @@ a.badge-dark:focus {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .list-group-horizontal-lg {
         -ms-flex-direction: row;
         flex-direction: row
@@ -6341,7 +6341,7 @@ a.close.disabled {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
 
     .modal-lg,
     .modal-xl {
@@ -7261,7 +7261,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .d-md-none {
         display: none !important
     }
@@ -7301,7 +7301,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .d-lg-none {
         display: none !important
     }
@@ -7806,7 +7806,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .flex-md-row {
         -ms-flex-direction: row !important;
         flex-direction: row !important
@@ -7978,7 +7978,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .flex-lg-row {
         -ms-flex-direction: row !important;
         flex-direction: row !important
@@ -8348,7 +8348,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .float-md-left {
         float: left !important
     }
@@ -8362,7 +8362,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .float-lg-left {
         float: left !important
     }
@@ -9423,7 +9423,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .m-md-0 {
         margin: 0 !important
     }
@@ -9857,7 +9857,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .m-lg-0 {
         margin: 0 !important
     }
@@ -10773,7 +10773,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .text-md-left {
         text-align: left !important
     }
@@ -10787,7 +10787,7 @@ button.bg-dark:hover {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .text-lg-left {
         text-align: left !important
     }
@@ -11026,7 +11026,7 @@ a.text-dark:hover {
 
     .container,
     body {
-        min-width: 992px !important
+        min-width: 1200px !important
     }
 
     .navbar {
@@ -11100,7 +11100,7 @@ p {
     margin: 0 0 25px
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     p {
         font-size: 18px;
         line-height: 1.6;
@@ -11157,7 +11157,7 @@ a:hover {
     background-color: transparent
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     #mainNav {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -11208,7 +11208,7 @@ a:hover {
     font-size: 18px
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .masthead {
         height: 100%;
         padding: 0
@@ -11259,7 +11259,7 @@ a:hover {
     height: 300px
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .content-section {
         padding-top: 200px;
         padding-bottom: 200px
