@@ -4,12 +4,20 @@ let style = window.getComputedStyle(chart_style);
 var widths = style.width;
 width = 0.8 * widths.replace(/\D+$/g, "")
 
+var sequencesfont = 1;
+var ww = 125;
+var screenwidth = window.innerWidth;
+if (screenwidth < 1080) {
+  sequencesfont = 0.5;
+  ww = 90;
+}
+
 var height = width * 1.2;
 console.log(width, height)
 var radius = width / 2;
 
 var b = {
-  w: 125,
+  w: ww,
   h: 30,
   s: 3,
   t: 10
@@ -114,6 +122,7 @@ function mouseover(d) {
 
   var percentage = (100 * d.value / totalSize).toPrecision(3);
   var amount = d.value;
+
   var percentageString = percentage + "%";
   if (percentage < 0.1) {
     percentageString = "< 0.1%";
@@ -140,10 +149,12 @@ function mouseover(d) {
   var amountString = details[dname];
 
   d3.select("#percentage")
-    .text(percentageString);
+    .text(percentageString)
+    .style("font-size", sequencesfont + "em");
 
   d3.select("#amount")
-    .text(amountString);
+    .text(amountString)
+    .style("font-size", sequencesfont + "em");
 
   d3.select("#explanation")
     .style("top", height / 2 - radius / 4 + "px")
@@ -151,7 +162,8 @@ function mouseover(d) {
     .style("width", radius / 2 + "px")
     .style("height", radius / 2 + "px")
     .style("text-align", "center")
-    .style("visibility", "");
+    .style("visibility", "")
+    .style("font-size", 1 + "em");
 
   var sequenceArray = d.ancestors().reverse();
   sequenceArray.shift();
@@ -188,6 +200,7 @@ function mouseleave(d) {
 
 function initializeBreadcrumbTrail() {
   var trail = d3.select("#sequence").append("svg:svg")
+    .style("font-size", sequencesfont + "em")
     .attr("width", width)
     .attr("height", 50)
     .attr("id", "trail");
@@ -227,6 +240,7 @@ function updateBreadcrumbs(nodeArray, percentageString) {
     });
 
   entering.append("svg:text")
+    .style("font-size", sequencesfont + "em")
     .attr("x", (b.w + b.t) / 2)
     .attr("y", b.h / 2)
     .attr("dy", "0.35em")
@@ -247,7 +261,8 @@ function updateBreadcrumbs(nodeArray, percentageString) {
     .text(percentageString);
 
   d3.select("#trail")
-    .style("visibility", "");
+    .style("visibility", "")
+    .style("font-size", sequencesfont + "em");
 
 }
 
